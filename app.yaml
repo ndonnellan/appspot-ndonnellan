@@ -5,13 +5,16 @@ api_version: 1
 threadsafe: true
 
 handlers:
+  - url: /stylesheets/images
+    static_dir: img
+
   - url: /stylesheets
     static_dir: stylesheets
     
   - url: /scripts
     static_dir: scripts
 
-  - url: (/img)|(/images)
+  - url: /img
     static_dir: img
 
   - url: /.*
